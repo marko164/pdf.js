@@ -6,7 +6,12 @@ Install dependencies:
 
 Build:
 
-    $ gulp minified
+    $ npm run lib-build
+    $ npm run lib-postbuild
+
+Publish to NPM:
+
+    $ npm run lib-publish
 
 ---
 
