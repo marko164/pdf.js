@@ -63,7 +63,10 @@
     "yargs": "^17.2.1"
   },
   "scripts": {
-    "postinstall": "cross-env PUPPETEER_PRODUCT=firefox node node_modules/puppeteer/install.js"
+    "postinstall": "cross-env PUPPETEER_PRODUCT=firefox node node_modules/puppeteer/install.js",
+    "lib-build": "gulp minified",
+    "lib-postbuild": "cp lib-package.json build/package.json && cp README.md build/README.md",
+    "lib-package": "cd build && npm pack"
   },
   "repository": {
     "type": "git",
